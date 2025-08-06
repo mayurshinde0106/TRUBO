@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 from sentence_transformers import SentenceTransformer, util
 
 app = Flask(__name__)
-model = SentenceTransformer('paraphrase-MiniLM-L6-v2')
+model = SentenceTransformer('all-MiniLM-L6-v2')
 
 # Sample stored questions
 stored_questions = [
